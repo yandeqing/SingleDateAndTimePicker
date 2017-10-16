@@ -17,5 +17,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:' + project.supportVersion
     compile 'com.android.support:design:' + project.supportVersion
     compile 'com.jakewharton:butterknife:7.0.1'
+//    compile 'com.github.florent37:singledateandtimepicker:1.2.1'
     compile project(':singledateandtimepicker')
 }

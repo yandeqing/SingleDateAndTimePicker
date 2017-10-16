@@ -1,8 +1,8 @@
 package com.github.florent37.sample.singledateandtimepicker;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.github.florent37.singledateandtimepicker.SingleDateAndTimePicker;
@@ -20,7 +20,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivityWithDoublePicker extends AppCompatActivity {
+public class MainActivityWithDoublePicker extends Activity {
 
     @Bind(R.id.doubleText)
     TextView doubleText;
@@ -83,9 +83,9 @@ public class MainActivityWithDoublePicker extends AppCompatActivity {
 
                 .defaultDate( defaultDate )
 
-                .titleTextColor(Color.GREEN)
-                .backgroundColor(Color.BLACK)
-                .mainColor(Color.GREEN)
+//                .titleTextColor(Color.GREEN)
+//                .backgroundColor(Color.BLACK)
+//                .mainColor(Color.GREEN)
 
                 .displayHours(true)
                 .displayMinutes(true)
@@ -120,9 +120,9 @@ public class MainActivityWithDoublePicker extends AppCompatActivity {
                 .bottomSheet()
                 .curved()
 
-                .titleTextColor(Color.GREEN)
-                .backgroundColor(Color.BLACK)
-                .mainColor(Color.GREEN)
+                .titleTextColor(Color.BLACK)
+//                .backgroundColor(Color.BLACK)
+//                .mainColor(Color.GREEN)
 
                 .displayHours(false)
                 .displayMinutes(false)
@@ -162,10 +162,10 @@ public class MainActivityWithDoublePicker extends AppCompatActivity {
 
         singleBuilder = new SingleDateAndTimePickerDialog.Builder(this)
                 .bottomSheet()
-                .curved()
+//                .curved()
 
-                .backgroundColor(Color.BLACK)
-                .mainColor(Color.GREEN)
+//                .backgroundColor(Color.BLACK)
+//                .mainColor(Color.GREEN)
 
                 //.displayHours(false)
                 //.displayMinutes(false)
@@ -209,11 +209,11 @@ public class MainActivityWithDoublePicker extends AppCompatActivity {
         final Date maxDate = calendarMax.getTime();
 
         doubleBuilder = new DoubleDateAndTimePickerDialog.Builder(this)
-                //.bottomSheet()
+//                .bottomSheet()
                 //.curved()
 
-                .backgroundColor(Color.BLACK)
-                .mainColor(Color.GREEN)
+                .backgroundColor(Color.WHITE)
+                .mainColor(Color.BLACK)
                 .minutesStep(15)
                 .mustBeOnFuture()
 

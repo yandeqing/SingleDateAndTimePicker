@@ -15,10 +15,14 @@
         android:elevation="4dp"
         android:orientation="vertical"
         >
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#c0c0c0" />
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="#f5f5f5"
             >
 
             <TextView
